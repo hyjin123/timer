@@ -11,7 +11,7 @@ const timer = (args) => {
     item = Number(item);
     // if input is a negative number, ignore and skip it
     // if input is not a number, ignore and skip it
-    if (item > 0 && Number.isInteger(item)) {
+    if (item >= 0 && Number.isInteger(item)) {
       // make a beep sound based on the time given, multiply time by 1000 to get seconds
       setTimeout(() => {
         console.log("beep");
